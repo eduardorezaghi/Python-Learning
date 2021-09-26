@@ -1,6 +1,6 @@
 from pyowm import OWM
 
-chave_api = '9d23aeb1c193dbd4fd958ef184504a1e'
+chave_api = ''
 
 def obtem_temperatura(local):
     climate_api = OWM(chave_api)
