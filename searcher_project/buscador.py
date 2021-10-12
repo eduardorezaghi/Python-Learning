@@ -12,15 +12,14 @@ http_request = requests.get('https://www.google.com/search',params=search_params
 results_page = BeautifulSoup(http_request.text, "html.parser")
 
 
-h3_title_list = results_page.find_all('h3',attrs={'class':'r'})
+h3_title_list = results_page.find_all('h3')
 
 print('\nResultados obtidos:\n')
 
 
-for title_h3 in h3_title_list:
-    title = title_h3.a.text
-    url_result = 'https://google.com' + title_h3.a.attrs['href']
+for h3 in h3_title_list:
+    title = h3.getText()
+    
 
     print('     Título:',title)
-    print('     URL:',url_result)
     print()
