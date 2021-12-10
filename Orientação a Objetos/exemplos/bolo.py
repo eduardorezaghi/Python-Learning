@@ -5,7 +5,7 @@ class Bolo():
     cozinheiro = 'Godoi'
 
     def __init__(self, sabor,
-                 tempera_de_aquecimento, tempo_de_aquecimento,
+                 tempera_de_aquecimento, tempo_de_aquecimento, 
                  tempera_de_assadura, tempo_de_assadura,
                  tipo_do_forno = 'industrial'):
         self.sabor = sabor

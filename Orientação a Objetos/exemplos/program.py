@@ -1,3 +1,5 @@
+from typing import overload
+from abc import ABC, abstractmethod
 import hr
 import disgruntled
 
